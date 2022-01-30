@@ -11,13 +11,13 @@ function askUser(){
   {
     type: 'input',
     name: 'projectName',
-    message: 'What is your project named?',
-    default: 'The best project ever, of course!',
+    message: 'What is the name of your project?',
+    default: 'Another day in the matrix.',
   },
   {
     type: 'input',
     name: 'username',
-    message: 'What is your github handle?',
+    message: 'What is your github username/handle?',
     default: 'github name',
   },
   {
@@ -29,24 +29,24 @@ function askUser(){
   {
     type: 'input',
     name: 'usage',
-    message: 'What are the rules about using this project code, materials, etc.?',
-    default: 'People can use this for anything as long as it is not commercial.',
+    message: 'Are there any rules, laws, or usage restrictions for using this project code?',
+    default: 'This project code is open source, but not for comercializaion.',
   },
   {
     type: 'input',
     name: 'tests',
-    message: 'What kind of testing was completed?',
-    default: 'I did x, y and z with testing.',
+    message: 'What was used to test this application?',
+    default: 'I wish I actually got around to testing it.',
   },
   {
     type: 'input',
     name: 'description',
-    message: 'How would you describe this project?',
+    message: 'Please provide a brief project description.',
   },
   {   // select from list
     type: 'list',
     name: 'licensing',
-    message: 'What License is this used with?',
+    message: 'What License(s) did you use for this project?',
     choices: [
         'Apache',
         'Artistic',
@@ -60,8 +60,8 @@ function askUser(){
   {
     type: 'input',
     name: 'contributing',
-    message: 'What should people do if they want to contribute to your project?',
-    default: 'Reach out on Github or via email with your plan.',
+    message: 'How can others contribute to your project?',
+    default: 'Please reach out on Github or sned me an email.',
   },
   {   // check multiple options
     type: 'checkbox',
@@ -74,12 +74,12 @@ function askUser(){
   {
     type: 'input',
     name: 'installation',
-    message: 'Please provide instructions to get started with your project.',
+    message: 'Please provide instructions on how to get started with your project.',
   },
   {
     type: 'input',
     name: 'credits',
-    message: 'Who, what, and how were you assisted in this project?',
+    message: 'Please list additional contributors to this project.',
   }
 ])
 }
@@ -90,7 +90,7 @@ async function init() {
       const buildContent = createReadMe(answers);
       writeAsync('./generated/README.md', buildContent);
       // overwrites last version - no new document
-      console.log('README.md successfully created in the written folder.');
+      console.log('README.md successfully created in the generated folder.');
   } catch (err) {
       console.log(err);
   }
