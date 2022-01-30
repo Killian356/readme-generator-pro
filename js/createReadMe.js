@@ -17,7 +17,7 @@ function createReadMe(answers) {
 - [Contributing](#contributing)
 - [Questions](#questions)
 
-### Description 💡 <a name="description"></a>
+### Description 🔮 <a name="description"></a>
 
 ${answers.description} 
 
@@ -35,7 +35,7 @@ ${answers.composition}
 
 This application is covered by the ${answers.licensing} license. 
 
-### Usage 💥 <a name="usage"></a> 
+### Usage 🌱 <a name="usage"></a> 
 
 ${answers.usage} 
 
@@ -43,14 +43,14 @@ ${answers.usage}
 
 ${answers.tests} 
 
-### Contributing 🤝 <a name="contributing"></a> 
+### Contributing 🧿 <a name="contributing"></a> 
 
 Resources and contributions: ${answers.credits} 
 <br />
 
-If you would like to contribute to the project further, then: ${answers.contributing} 
+If you would like to contribute to this project, then please: ${answers.contributing} 
 
-### Questions 😊 <a name="questions"></a> 
+### Questions 🎯 <a name="questions"></a> 
 
 Follow my projects on Github: [${answers.username}](https://github.com/${answers.username})
 <br />
