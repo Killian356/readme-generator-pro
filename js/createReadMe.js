@@ -43,7 +43,7 @@ ${answers.usage}
 
 ${answers.tests} 
 
-### Contributing 🧿 <a name="contributing"></a> 
+### Contributing 🪂 <a name="contributing"></a> 
 
 Resources and contributions: ${answers.credits} 
 <br />
