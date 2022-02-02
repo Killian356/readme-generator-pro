@@ -18,13 +18,13 @@ function askUser(){
     type: 'input',
     name: 'username',
     message: 'What is your github username/handle?',
-    default: 'github name',
+    default: 'Killian356',
   },
   {
     type: 'input',
     name: 'email',
     message: 'What is your email address?',
-    default: 'myname@domain.com',
+    default: 'Killian7195@gmail.com',
   },
   {
     type: 'input',
@@ -48,14 +48,15 @@ function askUser(){
     name: 'licensing',
     message: 'What License(s) did you use for this project?',
     choices: [
-        'Apache',
-        'Artistic',
-        'CC',
-        'Educational',
-        'MIT',
-        'Mozilla',
-        'Open',
-        'Other']
+        'BSD 3-Clause "New" or "Revised" license',
+        'BSD 2-Clause "Simplified" or "FreeBSD" license',
+        'CGNU General Public License (GPL)',
+        'GNU Library or "Lesser" General Public License (LGPL)',
+        'MIT license',
+        'Mozilla Public License 2.0',
+        'Common Development and Distribution License',
+        'Eclipse Public License version 2.0',
+        'Apache License 2.0']
   },
   {
     type: 'input',
@@ -66,9 +67,9 @@ function askUser(){
   {   // check multiple options
     type: 'checkbox',
     name: 'composition',
-    message: 'What language(s) did you use to create your project?',
+    message: 'What language(s) and technologies did you use to create your project?',
     choices: [
-        'HTML', 'CSS', 'JavaScript', 'Ruby', 'React', 'Python', 'C', 'C#', 'TypeScript', 'Other'
+        'HTML', 'CSS', 'JavaScript', 'Ruby', 'React', 'Python', 'C++', 'C#', 'TypeScript', 'Other', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'MySQL', 'NoSQL', 'OOP', 'PWA', 'Java'
     ],
   },
   {
