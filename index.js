@@ -16,6 +16,39 @@ function askUser(){
   },
   {
     type: 'input',
+    name: 'description',
+    message: 'Please provide a brief project description.',
+  },
+  {
+    type: 'input',
+    name: 'installation',
+    message: 'Please provide instructions on how to get started with your project.',
+  },
+  {  
+    type: 'checkbox',
+    name: 'languages',
+    message: 'What language(s) and technologies did you use to create your project?',
+    choices: [
+        'HTML', 'CSS', 'JavaScript', 'Ruby', 'React', 'Python', 'C++', 'C#', 'TypeScript', 'Other', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'MySQL', 'NoSQL', 'OOP', 'PWA', 'Java'
+    ],
+  },
+  {   // Locense List
+    type: 'list',
+    name: 'license',
+    message: 'What License(s) did you use for this project?',
+    choices: [
+        'BSD 3-Clause "New" or "Revised" license',
+        'BSD 2-Clause "Simplified" or "FreeBSD" license',
+        'CGNU General Public License (GPL)',
+        'GNU Library or "Lesser" General Public License (LGPL)',
+        'MIT license',
+        'Mozilla Public License 2.0',
+        'Common Development and Distribution License',
+        'Eclipse Public License version 2.0',
+        'Apache License 2.0']
+  },
+  {
+    type: 'input',
     name: 'username',
     message: 'What is your github username/handle?',
     default: 'Killian356',
@@ -40,46 +73,13 @@ function askUser(){
   },
   {
     type: 'input',
-    name: 'description',
-    message: 'Please provide a brief project description.',
-  },
-  {   // select from list
-    type: 'list',
-    name: 'licensing',
-    message: 'What License(s) did you use for this project?',
-    choices: [
-        'BSD 3-Clause "New" or "Revised" license',
-        'BSD 2-Clause "Simplified" or "FreeBSD" license',
-        'CGNU General Public License (GPL)',
-        'GNU Library or "Lesser" General Public License (LGPL)',
-        'MIT license',
-        'Mozilla Public License 2.0',
-        'Common Development and Distribution License',
-        'Eclipse Public License version 2.0',
-        'Apache License 2.0']
-  },
-  {
-    type: 'input',
-    name: 'contributing',
+    name: 'contribution',
     message: 'How can others contribute to your project?',
     default: 'Please reach out on Github or sned me an email.',
   },
-  {   // check multiple options
-    type: 'checkbox',
-    name: 'composition',
-    message: 'What language(s) and technologies did you use to create your project?',
-    choices: [
-        'HTML', 'CSS', 'JavaScript', 'Ruby', 'React', 'Python', 'C++', 'C#', 'TypeScript', 'Other', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'MySQL', 'NoSQL', 'OOP', 'PWA', 'Java'
-    ],
-  },
   {
     type: 'input',
-    name: 'installation',
-    message: 'Please provide instructions on how to get started with your project.',
-  },
-  {
-    type: 'input',
-    name: 'credits',
+    name: 'contributors',
     message: 'Please list additional contributors to this project.',
   }
 ])

@@ -14,7 +14,8 @@ function createReadMe(answers) {
 - [Licensing](#licensing)
 - [Usage](#usage)
 - [Testing](#testing)
-- [Contributing](#contributing)
+- [Contributions](#contributions)
+- [Questions and Concerns](#questions)
 
 ### Description <a name="description"></a>
 
@@ -28,11 +29,11 @@ ${answers.installation}
 
 ### Languages and Technologies Used <a name="languages"></a>
 
-${answers.composition}  
+${answers.languages}  
 
 ### Licensing <a name="licensing"></a> 
 
-This application is covered by the ${answers.licensing} license. 
+This application is covered by ${answers.license} license(s). 
 
 ### Usage <a name="usage"></a> 
 
@@ -42,9 +43,9 @@ ${answers.usage}
 
 ${answers.tests} 
 
-### Contributing <a name="contributing"></a> 
+### Contribution <a name="contributution"></a> 
 
-Resources and contributions: ${answers.credits} 
+Resources and contributions: ${answers.contributors} 
 <br />
 
 If you would like to contribute to this project, then please: ${answers.contributing}  
@@ -52,6 +53,7 @@ If you would like to contribute to this project, then please: ${answers.contribu
 Follow my projects on Github: [${answers.username}](https://github.com/${answers.username})
 <br />
 
+### Questions and Concerns <a name="questions"></a>
 If you have any additional questions, please contact me at: ${answers.email}
 `;
 }
